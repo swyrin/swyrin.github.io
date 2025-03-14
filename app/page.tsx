@@ -1,16 +1,19 @@
-import ShikiCodeBlock from "@/components/ShikiCodeBlock";
+import CodeBlock from "@/components/CodeBlock";
 import yuyuko from "@/public/yuyuko.jpg";
 import Image from "next/image";
 
 export default function Home() {
     return (
-        <div>
-            <div className={"flex min-h-screen flex-col items-center justify-center gap-10 bg-cat-base"}>
-                <Image src={yuyuko} alt="Logo" placeholder={"blur"} width={256} className={"rounded-full"} />
+        <>
+            <div className={"flex min-h-screen flex-col items-center justify-center gap-y-5 bg-cat-base"}>
+                <Image src={yuyuko} alt="Logo" placeholder={"blur"} width={150} className={"rounded-full"} />
                 <div className={"text-3xl font-extrabold text-cat-text"}>L.I.G.M.A.</div>
-                <blockquote className={"text-xl italic text-cat-mauve"}>shikanoko nokonoko koshitantan</blockquote>
 
-                <ShikiCodeBlock lang={"py"}>
+                <blockquote className={"italic text-cat-mauve lg:text-xl"}>
+                    &quot;shikanoko nokonoko koshitantan&quot;
+                </blockquote>
+
+                <CodeBlock lang={"py"}>
                     {[
                         "import numpy as np",
                         "from matplotlib import pyplot as plt",
@@ -22,14 +25,14 @@ export default function Home() {
                         "plt.plot(x_val, y_val)",
                         "plt.show()",
                     ].join("\n")}
-                </ShikiCodeBlock>
+                </CodeBlock>
 
-                <div className={"text-xl text-cat-text"}>
+                <div className={"text-cat-text lg:text-xl"}>
                     Shamefully brought to you by Next.
                     <br />
-                    (Framework is good, my code isn&#39;t)
+                    (Framework is good, my code isn&apos;t)
                 </div>
             </div>
-        </div>
+        </>
     );
 }
