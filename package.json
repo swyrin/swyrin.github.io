@@ -11,9 +11,12 @@
   "dependencies": {
     "@heroui/react": "^2.7.5",
     "framer-motion": "^12.5.0",
+    "gray-matter": "^4.0.3",
     "next": "15.2.2",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "react-dom": "^19.0.0",
+    "remark": "^15.0.1",
+    "remark-html": "^16.0.1"
   },
   "devDependencies": {
     "@catppuccin/tailwindcss": "^0.1.6",

@@ -13,9 +13,11 @@ export default async function CodeBlock({ children, lang }: CodeBlockProps) {
     return (
         <>
             {/* Placeholder for small screens */}
-            <div className={"text-sm font-bold text-cat-maroon sm:max-md:block md:hidden"}>
+            <div className={"justify-between text-center text-sm font-bold text-cat-maroon sm:max-md:block md:hidden"}>
                 If you don&apos;t see the code, your screen <span className={"italic"}>probably</span> is not big
-                enough. Site&apos;s desktop-first btw.
+                enough.
+                <br />
+                Site&apos;s desktop-first btw.
             </div>
 
             <div className={"hidden rounded-xl border-3 border-cat-flamingo p-4 md:block"}>

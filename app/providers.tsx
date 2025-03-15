@@ -1,5 +1,3 @@
-"use client";
-
 import { HeroUIProvider } from "@heroui/system";
 import * as React from "react";
 import { ReactNode } from "react";
