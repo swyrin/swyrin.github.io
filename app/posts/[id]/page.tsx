@@ -1,4 +1,4 @@
-import { getPostData } from "@/lib/posts";
+import { getAllPostIds, getPostData } from "@/lib/posts";
 import Link from "next/link";
 
 export default async function BlogPage({ params }: { params: Promise<{ id: string }> }) {
@@ -25,4 +25,8 @@ export default async function BlogPage({ params }: { params: Promise<{ id: strin
             </Link>
         </div>
     );
+}
+
+export function generateStaticParams() {
+    return getAllPostIds();
 }

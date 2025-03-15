@@ -3,9 +3,9 @@ import type { NextConfig } from "next";
 const nextConfig: NextConfig = {
     reactStrictMode: true,
     images: {
-        unoptimized: false,
+        unoptimized: true,
     },
-    output: process.env.GITHUB_ACTION ? "export" : undefined,
+    output: "export",
 };
 
 export default nextConfig;
