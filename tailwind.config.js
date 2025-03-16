@@ -1,5 +1,6 @@
-import cat from "@catppuccin/tailwindcss";
-import { heroui } from "@heroui/react";
+import catppuccinDaisy from "@catppuccin/daisyui";
+import catppuccinTailwind from "@catppuccin/tailwindcss";
+import daisyui from "daisyui";
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
@@ -7,17 +8,22 @@ module.exports = {
         "./app/**/*.{js,ts,jsx,tsx,mdx}",
         "./pages/**/*.{js,ts,jsx,tsx,mdx}",
         "./components/**/*.{js,ts,jsx,tsx,mdx}",
-        "./node_modules/@heroui/theme/dist/**/*.{js,ts,jsx,tsx}",
     ],
     theme: {
         extend: {},
     },
-    darkMode: "class",
     plugins: [
-        heroui(),
-        cat({
+        daisyui,
+        catppuccinTailwind({
             prefix: "cat",
             defaultFlavour: "mocha",
         }),
     ],
+    daisyui: {
+        themes: [
+            catppuccinDaisy("mocha", { primary: "sky", secondary: "rosewater" }),
+            "dark",
+        ],
+        logs: false
+    },
 };

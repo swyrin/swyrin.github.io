@@ -9,8 +9,6 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@heroui/react": "^2.7.5",
-    "framer-motion": "^12.5.0",
     "gray-matter": "^4.0.3",
     "next": "15.2.2",
     "react": "^19.0.0",
@@ -19,6 +17,7 @@
     "remark-html": "^16.0.1"
   },
   "devDependencies": {
+    "@catppuccin/daisyui": "^1.2.1",
     "@catppuccin/tailwindcss": "^0.1.6",
     "@eslint/eslintrc": "^3",
     "@shikijs/colorized-brackets": "^3.2.1",
@@ -27,6 +26,7 @@
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "autoprefixer": "^10.4.21",
+    "daisyui": "^4.12.24",
     "eslint": "^9",
     "eslint-config-next": "15.2.2",
     "eslint-config-prettier": "^10.1.1",
